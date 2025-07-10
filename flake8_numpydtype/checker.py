@@ -37,6 +37,26 @@ CHECKLIST = {
     'numpy.bytes0': 'numpy.bytes_',
     'np.void0': 'np.void',
     'numpy.void0': 'numpy.void',
+
+    # https://numpy.org/devdocs/numpy_2_0_migration_guide.html#main-namespace
+    'np.cfloat': 'np.complex128',
+    'numpy.cfloat': 'numpy.complex128',
+    'np.clongfloat': 'np.clongdouble',
+    'numpy.clongfloat': 'numpy.clongdouble',
+    'np.complex_': 'np.complex128',
+    'numpy.complex_': 'numpy.complex128',
+    'np.float_': 'np.float64',
+    'numpy.float_': 'numpy.float64',
+    'np.longcomplex': 'np.clongdouble',
+    'numpy.longcomplex': 'numpy.clongdouble',
+    'np.longfloat': 'np.longdouble',
+    'numpy.longfloat': 'numpy.longdouble',
+    'np.singlecomplex': 'np.complex64',
+    'numpy.singlecomplex': 'numpy.complex64',
+    'np.string_': 'np.bytes_',
+    'numpy.string_': 'numpy.bytes_',
+    'np.unicode_': 'np.str_',
+    'numpy.unicode_': 'numpy.str_',
 }
 
 class NumpyDTypeChecker(object):
