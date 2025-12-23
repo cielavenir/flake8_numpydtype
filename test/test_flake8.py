@@ -38,7 +38,7 @@ numpy.uint
 def test_positive_float():
     tree = parse('''
 import numpy
-numpy.float_
+numpy.float64
 ''')
     violations = list(NumpyDTypeChecker(tree).run())
     assert len(violations) == 0
@@ -46,7 +46,7 @@ numpy.float_
 def test_positive_complex():
     tree = parse('''
 import numpy
-numpy.complex_
+numpy.complex128
 ''')
     violations = list(NumpyDTypeChecker(tree).run())
     assert len(violations) == 0
